@@ -1,9 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+[![Codeship Status for samuelgrieve1/wheres-johnny](https://app.codeship.com/projects/0784fb6a-79a5-4139-a528-b433a88a9cb1/status?branch=master)](https://app.codeship.com/projects/416524)
 
 * Ruby version
 
