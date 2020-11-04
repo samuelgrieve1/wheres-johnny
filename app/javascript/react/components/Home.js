@@ -1,8 +1,12 @@
 import React from 'react'
+import JohnMap from './JohnMap.js'
 
 export const Home = (props) => {
   return (
-    <h1>Welcome home!</h1>
+    <div>
+      <h1>Welcome home!</h1>
+      <JohnMap />
+    </div>
   )
 }
 
