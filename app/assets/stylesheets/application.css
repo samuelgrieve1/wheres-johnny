@@ -22,6 +22,9 @@ body{
 .wheres-johnny-logo{
   max-height: 200px;
 }
+#map {
+  height: 300px;
+}
 .subnav-hero-section {
   text-align: center;
   background: #ffffff;
