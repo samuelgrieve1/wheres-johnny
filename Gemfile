@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'active_model_serializers', '~> 0.10.10'
 
 group :development, :test do
 
