@@ -5,6 +5,7 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
+import "@reach/combobox/styles.css";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
@@ -18,7 +19,6 @@ import {
 } from "@reach/combobox";
 import { formatRelative } from "date-fns";
 
-import "@reach/combobox/styles.css";
 import mapStyles from "./mapStyles";
 
 const libraries = ["places"];
@@ -85,7 +85,7 @@ export default function Map() {
               setSelected(marker);
             }}
             icon={{
-              url: `/bear.svg`,
+              url: `/images/map-marker.png`,
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
               scaledSize: new window.google.maps.Size(30, 30),
@@ -107,7 +107,7 @@ export default function Map() {
                 </span>{" "}
                 Alert
               </h2>
-              <p>Spotted {formatRelative(selected.time, new Date())}</p>
+              
             </div>
           </InfoWindow>
         ) : null}
