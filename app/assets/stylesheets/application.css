@@ -24,10 +24,42 @@
 body {
   background-image: url('/images/bg-toilet-brown.png');
   background-color: white;
+  margin: 0;
 }
 a {
   color: yellow;
 }
+
+.search {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 10;
+}
+
+.search input {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.locate {
+  position: absolute;
+  top: 80px;
+  right: 1rem;
+  background: none;
+  border: none;
+  z-index: 10;
+}
+.locate img {
+  width: 30px;
+  cursor: pointer;
+}
+
+
 .wheres-johnny-logo {
   max-height: 50px;
 }
@@ -37,17 +69,17 @@ a {
   max-height: 38px;
 }
 .top-bar, .top-bar ul {
-  background-color: #301F0D;
+  background-color: #ffffff;
 }
 .menu .menu-text {
   color: #ffffff;
   font-size: large;
 }
 .tagline {
-  color: #ffffff;
+  color: black;
   list-style: none;
   font-weight: bold;
-  font-size: large;
+  font-size: larger;
 }
 .page-heading {
   text-align: center;
@@ -55,11 +87,15 @@ a {
   font-family: 'komika_titleregular';
 }
 .sign-up-btn {
-  border: solid 1px white;
+  background-color: yellow;
+  font-weight: bold;
+}
+.login-btn {
+  background-color: white;
 }
 .button:hover, .button:focus {
   background-color: yellow;
-  color: #301F0D;
+  color: black;
   box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
   border: solid 1px rgba(0,0,0,.2);
   outline: 0;
@@ -86,7 +122,7 @@ a {
 }
 #map {
   width: 100%;
-  height: 600px;
+  height: calc(100vh - 66px);
   border: solid 1px #eee;
 }
 .formy-container {
@@ -103,17 +139,17 @@ a {
   font-weight: bold;
 }
 .formy a {
-  color: #301F0D;
+  color: black;
   text-decoration: underline;
 }
 .upload-btn {
   background-color: #fff;
-  color: #301F0D;
+  color: black;
   border: solid 1px yellow;
 }
 .submit-btn {
   background-color: yellow;
-  color: #301F0D;
+  color: black;
   border: solid 1px rgba(0,0,0,.2);
   font-weight: bold;
   font-size: large;
@@ -128,15 +164,15 @@ a {
 }
 
 .topbar-center-logo {
-  background: #301F0D;
+  background: #ffffff;
 }
 
 .topbar-center-logo .menu {
-  background: #301F0D;
+  background: black;
 }
 
 .topbar-center-logo .menu a {
-  color: white;
+  color: black;
 }
 
 .topbar-center-logo .menu a::after {
@@ -157,12 +193,12 @@ a {
     background-color: yellow;
   }
   .topbar-center-logo .menu a {
-    color: #301F0D;
+    color: black;
   }
 }
 
 .topbar-center-logo-mobile {
-  background: #301F0D;
+  background:black;
 }
 
 .topbar-center-logo-mobile .menu-icon {
