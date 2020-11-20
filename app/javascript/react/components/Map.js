@@ -5,7 +5,6 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import "@reach/combobox/styles.css";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
@@ -17,7 +16,8 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-import { formatRelative } from "date-fns";
+// import "@reach/combobox/styles.css";
+// import { formatRelative } from "date-fns";
 
 import mapStyles from "./mapStyles";
 
@@ -101,13 +101,7 @@ export default function Map() {
             }}
           >
             <div>
-              <h2>
-                <span role="img" aria-label="bear">
-                  🐻
-                </span>{" "}
-                Alert
-              </h2>
-              
+              <a className="get-directions-link" href="/">Get directions</a>
             </div>
           </InfoWindow>
         ) : null}

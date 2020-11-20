@@ -29,14 +29,16 @@ body {
 a {
   color: yellow;
 }
-
+.flash-notice {
+  background-color: yellow;
+  text-align: center;
+}
 .search {
   position: absolute;
-  top: 80px;
+  top: 110px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 400px;
+  width: 96%;
   z-index: 10;
 }
 
@@ -48,17 +50,23 @@ a {
 
 .locate {
   position: absolute;
-  top: 80px;
-  right: 1rem;
+  top: 120px;
+  right: 4%;
   background: none;
   border: none;
-  z-index: 10;
+  z-index: 11;
 }
 .locate img {
   width: 30px;
   cursor: pointer;
 }
-
+.get-directions-link {
+  color: blue;
+}
+.get-directions-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
 
 .wheres-johnny-logo {
   max-height: 50px;
@@ -167,16 +175,14 @@ a {
   background: #ffffff;
 }
 
-.topbar-center-logo .menu {
-  background: black;
-}
-
 .topbar-center-logo .menu a {
   color: black;
 }
-
+.submenu {
+  z-index: 12;
+}
 .topbar-center-logo .menu a::after {
-  border-color: white transparent transparent transparent !important;
+  border-color: black transparent transparent transparent !important;
 }
 
 .topbar-center-logo .top-bar-center {
@@ -203,4 +209,45 @@ a {
 
 .topbar-center-logo-mobile .menu-icon {
   vertical-align: text-top;
+}
+
+
+
+:root {
+  --reach-combobox: 1;
+}
+
+[data-reach-combobox-popover] {
+  border: solid 1px hsla(0, 0%, 0%, 0.25);
+  background: hsla(0, 100%, 100%, 0.99);
+  font-size: 85%;
+}
+
+[data-reach-combobox-list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+[data-reach-combobox-option] {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+}
+
+[data-reach-combobox-option][aria-selected="true"] {
+  background: hsl(211, 10%, 95%);
+}
+
+[data-reach-combobox-option]:hover {
+  background: hsl(211, 10%, 92%);
+}
+
+[data-reach-combobox-option][aria-selected="true"]:hover {
+  background: hsl(211, 10%, 90%);
+}
+
+[data-suggested-value] {
+  font-weight: bold;
 }
