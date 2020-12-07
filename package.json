@@ -17,14 +17,17 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.6.2",
     "@rails/webpacker": "3.5",
+    "@reach/combobox": "^0.11.2",
+    "@react-google-maps/api": "^1.13.0",
     "babel-loader": "^8.0.6",
     "google-map-react": "^2.1.9",
     "google-maps": "^4.3.3",
-    "prop-types": "~15.6.0",
+    "prop-types": "^15.7.2",
     "react": "~16.8.0",
     "react-dom": "~16.8.0",
     "react-router-dom": "^5.2.0",
-    "redbox-react": "1.6.0"
+    "redbox-react": "1.6.0",
+    "use-places-autocomplete": "^1.6.0"
   },
   "devDependencies": {
     "babel-jest": "^24.9.0",

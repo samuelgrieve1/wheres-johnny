@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './Home'
+import Map from './Map'
 import UserShowContainer from './UserShowContainer'
 
 export const App = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path='/' component={Map} />
         <Route exact path='/users/:id' component={UserShowContainer} />
       </Switch>
     </BrowserRouter>

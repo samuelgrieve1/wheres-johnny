@@ -22,7 +22,7 @@
   <!-- medium and larger nav bar -->
   <div class="top-bar topbar-center-logo" id="topbar-center-logo">
     <div class="top-bar-left hide-for-small-only">
-      <%= link_to(image_tag("/images/logo-yellow.png", class: "wheres-johnny-logo"), "/") %>
+      <%= link_to(image_tag("/images/logo.png", class: "wheres-johnny-logo"), "/") %>
     </div>
     <div class="top-bar-center">
       <li class="tagline">Find a john near you</li>
@@ -41,8 +41,8 @@
             </ul>
           </li>
           <%- else -%>
-          <li><%= link_to 'Login', new_user_session_path %></li>
-          <li><%= link_to 'Sign Up', new_user_registration_path, class: 'sign-up-btn' %></li>
+          <li><%= link_to 'Login', new_user_session_path, class: 'login-btn' %></li>
+          <li><%= link_to 'Sign up', new_user_registration_path, class: 'sign-up-btn' %></li>
         <%- end -%>
       </ul>
     </div>
